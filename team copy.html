@@ -21,26 +21,6 @@
     .jarallax {
       height: 100%;
     }
-
-    @media (min-width: 800px) and (max-width: 1900px) {
-      /* @media (min-width: 800px) and (max-width: 850px) { */
-      /* .navbar:not(.top-nav-collapse) {
-        background: #3E4551 !important;
-      }
-
-      .navbar {
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
-      } */
-    }
-
-    .navbar-brand {
-      margin-left: 0px;
-    }
-
-    s.navbar .navbar-menu {
-      margin-right: 0px;
-    }
-
   </style>
 
 </head>
@@ -50,28 +30,19 @@
   <!-- Navigation & Intro -->
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-body-tertiary scrolling-navbar " style="background-color: #D60000;">
-      <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-body-tertiary scrolling-navbar " style="background-color: #262626;"> -->
-      <div class="container-fluid justify-content-between ">
-        <!-- <a class="navbar-brand" href="#"> logo</a> -->
-
-        <div class="d-flex" style="background-color: black;">
-          <a class="navbar-brand me-2   d-flex align-items-center " href="#">
-            <!-- <a class="navbar-brand me-2 mb-1 d-flex align-items-center bg-primary" href="#"> -->
-            <img src="img/logo_calistenia.png" height="40" alt="Logo" loading="lazy" style="margin: 0px; padding: 0px;" />
-            <!-- <img src="img/logo_calistenia.png" height="20" alt="MDB Logo" loading="lazy" style="margin-top: 2px;" /> -->
-          </a>
-        </div>
-
-        <!-- <a class="navbar-brand" href="#"> <img src="img/logo_calistenia.png" alt="abc" style="width: 120px;"> </a> -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top scrolling-navbar " style="background-color: #D60000;">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">  logo</a> -->
+        <a class="navbar-brand" href="#"> <img src="img/logo_calistenia.png" alt="abc" style="width: 80px;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto smooth-scroll">
-
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#about" data-offset="30">Quienes Somos</a>
             </li>
@@ -81,10 +52,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#timetable" data-offset="100">Sucursales</a>
             </li>
-
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#tickets" data-offset="100">Invierte en Calistenia</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#contact" data-offset="100">Contactanos</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact" data-offset="100">Más</a>
+            </li> -->
           </ul>
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
@@ -104,8 +80,8 @@
     <!-- Calistenia Bolivia S.R.L. te brinda uno de los mejores métodos de entrenamiento funcional ayudando a desarrollar fuerza que se traduzca en alto rendimiento contando con coaching calificados para supervisar y guiar el proceso en todo el entrenamiento. -->
 
     <!-- Intro Section -->
-    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('img/arte_calistenia.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; ">
-      <!-- <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://www.cambiatufisico.com/wp-content/uploads/entrenamiento-progresion.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
+    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'
+      style="background-image: url('https://www.cambiatufisico.com/wp-content/uploads/entrenamiento-progresion.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <!-- style="background-image: url('https://as01.epimg.net/deporteyvida/imagenes/2017/09/15/portada/1505469796_844933_1505470061_noticia_normal.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
       <!-- style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Sport/full page/img%20(1).jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
       <div class="mask rgba-black-strong">
@@ -128,8 +104,10 @@
   <!-- Main layout -->
   <main>
 
+
     <!-- First container -->
     <div class="container">
+
 
       <div class="row mb-5 wow fadeIn center" data-wow-delay="0.2s">
         <section class="section team-section pt-3">
@@ -140,6 +118,10 @@
           <a href="#about" class="btn btn-outline wow fadeIn text-center" data-wow-delay="0.4s">Comienza ahora</a>
         </section>
       </div>
+
+
+
+
 
       <!-- Section About -->
 
@@ -155,7 +137,8 @@
           <!-- Place for photo -->
           <div class="col-lg-4 mb-2">
 
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(118).jpg" alt="My photo" class="z-depth-1 img-fluid">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(118).jpg" alt="My photo"
+              class="z-depth-1 img-fluid">
 
           </div>
 
@@ -187,7 +170,8 @@
     <!-- First container -->
 
     <!-- Streak -->
-    <div class="streak streak-photo streak-md" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Sport/8-col/img%20(1).jpg')">
+    <div class="streak streak-photo streak-md"
+      style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Sport/8-col/img%20(1).jpg')">
 
       <div class="flex-center rgba-teal-light mask">
 
@@ -462,10 +446,12 @@
           <div class="col-lg-4 col-md-12 mb-5">
 
             <!-- Card -->
-            <div class="card card-image pricing-card" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20(26).jpg')">
+            <div class="card card-image pricing-card"
+              style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20(26).jpg')">
 
               <!-- Content -->
-              <div class="text-white text-center pricing-card d-flex align-items-center rgba-black-light py-3 px-3 rounded">
+              <div
+                class="text-white text-center pricing-card d-flex align-items-center rgba-black-light py-3 px-3 rounded">
 
                 <div class="card-body">
 
@@ -604,7 +590,8 @@
               <!-- Image -->
               <div class="view overlay mb-3 z-depth-1">
 
-                <img src="https://mdbootstrap.com/img/Photos/Others/team1.jpg" class="img-fluid z-depth-1" alt="Post Image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/team1.jpg" class="img-fluid z-depth-1"
+                  alt="Post Image">
 
                 <div class="mask rgba-white-slight"></div>
 
@@ -688,7 +675,8 @@
               <!-- Image -->
               <div class="view overlay mb-3 z-depth-1">
 
-                <img src="https://mdbootstrap.com/img/Photos/Others/team3.jpg" class="img-fluid z-depth-1" alt="Post Image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/team3.jpg" class="img-fluid z-depth-1"
+                  alt="Post Image">
 
                 <div class="mask rgba-white-slight"></div>
 
@@ -876,7 +864,8 @@
         <ul class="list-unstyled">
 
           <li>
-            <h3 class="h3-responsive white-text mt-4 wow fadeIn" data-wow-delay="0.2s"><i class="fas fa-quote-left" aria-hidden="true"></i> When people succeed, it is because of hard work. Luck has nothing to do with
+            <h3 class="h3-responsive white-text mt-4 wow fadeIn" data-wow-delay="0.2s"><i class="fas fa-quote-left"
+                aria-hidden="true"></i> When people succeed, it is because of hard work. Luck has nothing to do with
               success. <i class="fas fa-quote-right" aria-hidden="true"></i></h3>
           </li>
 
@@ -1020,17 +1009,13 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h6 class="text-uppercase mb-4 font-weight-bold">Horarios atencion</h6>
           <p>
-            <i class="fas fa-home mr-3"></i>Lunes - vier
-          </p>
+            <i class="fas fa-home mr-3"></i>Lunes - vier</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i>09:00 am a 18:00 pm
-          </p>
+            <i class="fas fa-envelope mr-3"></i>09:00 am a 18:00 pm</p>
           <p>
-            <i class="fas fa-home mr-3"></i>Sabado
-          </p>
+            <i class="fas fa-home mr-3"></i>Sabado</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i>09:00 am a 12:00 pm
-          </p>
+            <i class="fas fa-envelope mr-3"></i>09:00 am a 12:00 pm</p>
         </div>
         <!--/.Fourth column-->
 
