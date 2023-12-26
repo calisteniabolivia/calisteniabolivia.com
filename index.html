@@ -22,7 +22,8 @@
       --secondary: #898888;
       --third: cyan;
       --fourth: pink;
-      --border: blue;
+      /* --border: blue; */
+      --border: transparent;
       --texto_primay: black;
       --texto_secondary: white;
     }
@@ -72,6 +73,23 @@
 
     .border {
       border-color: var(--border) !important;
+    }
+
+     .md-form::content , input {
+      color: cyan !important;
+      box-shadow: cyan !important;
+      background-color: cyan !important;
+    }
+
+    .md-form::after , input {
+      color: #D60000 !important;
+      box-shadow: #D60000 !important;
+      /* background-color: #D60000 !important; */
+    }
+    .md-form::shadow , input {
+      color: purple !important;
+      box-shadow: purple !important;
+      background-color: purple !important;
     }
   </style>
 </head>
@@ -290,11 +308,6 @@
   </div>
 
   <div class="container">
-
-    <!-- <hr class="between-sections"> -->
-
-
-    <!-- <hr class="between-sections"> -->
     <section class="contact-section my-5 col-md-10 container">
       <h4 class="font-weight-bold text-center my-5">Contáctanos</h4>
       <p class="text-center w-responsive mx-auto mb-5">Estamos listos para ayudarte. No dudes en escribirnos para
@@ -453,21 +466,7 @@
               </ul>
             </div>
 
-            <!-- <div class="col-sm-12 col-md-6">
-    
-              <a href="https://apps.apple.com/bo/app/calistenia-bolivia/id6443573666?l=en-GB"> <img
-                  src="img/descargar_ios.png" height="50" width="180" alt="ios" loading="lazy" class="v-mdb-smooth"></a>
-              <br>
-    
-            </div>
-    
-            <div class="col-sm-12 col-md-6">
-    
-              <a href="https://apps.apple.com/bo/app/calistenia-bolivia/id6443573666?l=en-GB"> <img
-                  src="img/descargar_android.png" height="54" width="180" alt="adroid" loading="lazy"
-                  class="v-mdb-smooth" /></a>
-    
-            </div> -->
+
           </div>
 
 
