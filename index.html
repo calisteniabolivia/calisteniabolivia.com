@@ -22,7 +22,9 @@
       --secondary: #898888;
       --third: cyan;
       --fourth: pink;
-      --border: transparent;
+      --border: blue;
+      --texto_primay: black;
+      --texto_secondary: white;
     }
 
     #sucursal,
@@ -66,6 +68,9 @@
       .navbar {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
       }
+    }
+    .border{
+      border-color: var(--border) !important;
     }
   </style>
 </head>
@@ -173,7 +178,9 @@
 
     <div class="container">
 
-      <section id="destination" class="mt-4 text-center">
+
+
+      <section id="destination" class="mt-4 text-center my-5 pb-4 border">
         <h4 class="text-center my-5 font-weight-bold wow fadeIn" data-wow-delay="0.2s">
           <strong>Que es Calistenia Bolivia?</strong>
         </h4>
@@ -183,13 +190,34 @@
           entrenamiento.</h3>
         <a href="#about" class="btn btn-outline wow fadeIn text-center center"
           style="background-color: var(--primary); color: white; " data-wow-delay="0.4s">Comienza ahora</a>
-<!-- 
-        <button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-init
-          data-mdb-ripple-color="dark">Primary</button> -->
-
       </section>
 
-      <section id="services" class="section my-5 pb-4">
+
+      <section id="about" class="section my-5 pb-4 border">
+        <h1 class="section-heading text-center mb-5 my-5 mb-4 font-weight-bold wow fadeIn">Acerca de Nosotros</h1>
+        <div class="row mb-5 wow fadeIn" data-wow-delay="0.2s">
+          <div class="col-lg-4 mb-2">
+            <img src="img/arte_calistenia.png" alt="My photo" class="  img-fluid">
+            <button type="button" class="btn btn-sm btn-outline-danger" data-mdb-ripple-init
+              data-mdb-ripple-color="dark">Ver mas</button>
+          </div>
+          <div class="col-lg-8 mb-2">
+            <p class="lead">¡Bienvenido a Calistenia Bolivia SRL!</p>
+            <p class="text-justify">En<span style="font-weight: bold;"> Calistenia Bolivia SRL </span>, nos dedicamos al
+              apasionante mundo de la calistenia. Fundada por entusiastas de la calistenia en [año de fundación],
+              nuestra misión es promover y compartir los beneficios transformadores de esta disciplina física.</p>
+            <p class="text-justify">Nos apasiona la calistenia y su capacidad para transformar vidas. Desde
+              principiantes hasta atletas experimentados, en Calistenia bolivia SRL nos esforzamos por brindar
+              recursos, entrenamientos y consejos para ayudar a todos a alcanzar sus metas de fitness y bienestar.</p>
+            <p class="text-justify">Nuestro equipo está formado por expertos en calistenia comprometidos con el objetivo
+              de inspirar y guiar a nuestra comunidad. Nos enorgullecemos de compartir nuestro conocimiento y
+              experiencias para motivar a otros a alcanzar su máximo potencial a través de la calistenia.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="motivacion" class="section my-5 pb-4 border">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s"
           style="color: var(--primary);">motivación</h2>
         <div class="row features-small wow fadeIn" data-wow-delay="0.4s">
@@ -209,20 +237,18 @@
         </div>
       </section>
 
-      <section id="services" class="section my-5 pb-4">
+      <section id="nuestras_clases" class="section my-5 pb-4 border">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s"
           style="color: var(--primary);">nuestras clases</h2>
         <div class="row features-small wow fadeIn" data-wow-delay="0.4s">
           <div class="col-sm-12 col-md-6">
             <div class="avatar mx-auto mb-4 bg-danger">
               <img src="http://placehold.it/600x450" class="z-depth-1 img-fluid">
-
               <h2>CALISTENIA</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora saepe debitis non modi cumque
                 laudantium tempore est quod ducimus nemo! Nihil doloribus nostrum rerum vitae itaque accusantium. Minus,
                 quisquam vero.</p>
             </div>
-
           </div>
           <div class="col-sm-12 col-md-6">
             <div class="avatar mx-auto mb-4 bg-danger">
@@ -231,50 +257,13 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora saepe debitis non modi cumque
                 laudantium tempore est quod ducimus nemo! Nihil doloribus nostrum rerum vitae itaque accusantium. Minus,
                 quisquam vero.</p>
-
             </div>
           </div>
         </div>
       </section>
 
-      <section id="historia" class="section my-5 pb-4">
-        <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s"
-          style="color: var(--primary);">Historia completa</h2>
-        <hr>
-        <p>Somos una empresa centrada en el bienestar, ofreciendo los mejores métodos de entrenamiento funcional para
-          desarrollar fuerza que se traduzca en un alto rendimiento. Contamos con coaches calificados que supervisan y
-          guían durante todo el proceso de entrenamiento.</p>
-        <div class="row features-small wow fadeIn" data-wow-delay="0.4s">
 
-          <div class="col-sm-12 col-md-6">
-            <div class="avatar mx-auto mb-4 bg-danger">
-              <img src="http://placehold.it/600x300" class="z-depth-1 img-fluid">
-            </div>
-
-          </div>
-          <div class="col-sm-12 col-md-6 ">
-            <div class="avatar mx-auto mb-4 bg-danger text-center ">
-              <h2>nuestra Mision</h2>
-              <p>es mejorar la vida de las personas a través de nuestro método de entrenamiento funcional y la
-                supervisión de coaches altamente calificados.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6">
-            <div class="avatar mx-auto mb-4 bg-danger">
-              <h2>nuestra Vision</h2>
-              <p>Llegar a ser una cadena internacional, extendiéndonos a más de 60 países.</p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="avatar mx-auto mb-4 bg-danger">
-              <img src="http://placehold.it/600x300" class="z-depth-1 img-fluid">
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <section id="sucursal" class="section my-5 pb-4">
+      <section id="sucursales" class="section my-5 pb-4 border">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s"
           style="color: var(--primary);">Encuentra tu sucursal</h2>
         <hr>
@@ -377,41 +366,6 @@
         </div>
       </section>
 
-      <section id="about" class="section py-4">
-
-        <h1 class="section-heading text-center mb-5 my-5 mb-4 font-weight-bold wow fadeIn">Acerca de Nosotros</h1>
-
-        <div class="row mb-5 wow fadeIn" data-wow-delay="0.2s">
-
-          <div class="col-lg-4 mb-2">
-
-            <img src="img/arte_calistenia.png" alt="My photo" class="  img-fluid">
-            <button type="button" class="btn btn-sm btn-outline-danger" data-mdb-ripple-init
-                  data-mdb-ripple-color="dark">Ver mas</button>
-          </div>
-
-          <!-- Text content -->
-          <div class="col-lg-8 mb-2">
-
-            <p class="lead">¡Bienvenido a Calistenia Bolivia SRL!</p>
-
-            <p class="text-justify">En<span style="font-weight: bold;"> Calistenia Bolivia SRL </span>, nos dedicamos al
-              apasionante mundo de la calistenia. Fundada por entusiastas de la calistenia en [año de fundación],
-              nuestra misión es promover y compartir los beneficios transformadores de esta disciplina física.</p>
-
-            <p class="text-justify">Nos apasiona la calistenia y su capacidad para transformar vidas. Desde
-              principiantes hasta atletas experimentados, en Calistenia bolivia SRL nos esforzamos por brindar
-              recursos, entrenamientos y consejos para ayudar a todos a alcanzar sus metas de fitness y bienestar.</p>
-
-            <p class="text-justify">Nuestro equipo está formado por expertos en calistenia comprometidos con el objetivo
-              de inspirar y guiar a nuestra comunidad. Nos enorgullecemos de compartir nuestro conocimiento y
-              experiencias para motivar a otros a alcanzar su máximo potencial a través de la calistenia.</p>
-
-          </div>
-
-        </div>
-
-      </section>
 
       <!-- <section id="services" class="section my-5 pb-4">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-5 pt-5 pb-4 wow fadeIn" data-wow-delay="0.2s"
@@ -521,7 +475,7 @@
           </div>
         </div>
       </section> -->
- 
+
 
     </div>
   </main>
@@ -827,9 +781,9 @@
       </ul>
     </div>
   </div> -->
- 
 
- 
+
+
 
 
 
@@ -851,20 +805,20 @@
     <div class="container">
 
 
-       <div class="container  py-5" style="background-color: var(--secondary);  ">
+      <div class="container  py-5" style="background-color: var(--secondary);  ">
         <div class="flex-center row">
-    
-          <div class="col-sm-8 col-lg-8">
+
+          <div class="col-sm-10 col-md-6">
             <ul class="list-unstyled list-inline">
-    
-              
+
+
               <li class="list-inline-item  ">
                 <a href="https://www.facebook.com/calisteniabolivia" target="_blank" class="btn-floating btn-md"
                   style="background-color:var(--primary) !important; width: 45px; height: 45px;">
                   <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
                 </a>
               </li>
-    
+
               <li class="list-inline-item">
                 <a href="https://www.instagram.com/calisteniabolivia" target="_blank" class="btn-floating btn-md"
                   style="background-color:var(--primary) !important">
@@ -873,9 +827,10 @@
               </li>
             </ul>
           </div>
-    
-          <div class="col-sm-4 col-lg-4 v-mdb-smooth">
-            <h6 class="text-uppercase mb-4 font-weight-bold text-center col-xs-12 col-lg-12 text-xs-left" style="color: white;">DESCARGA LA APP</h6>
+
+          <div class="col-sm-10 col-md-6 v-mdb-smooth">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-center col-xs-12 col-lg-12 text-xs-left"
+              style="color: white;">DESCARGA LA APP</h6>
             <div class="col-sm-12 col-md-12">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item mx-0">
@@ -888,7 +843,7 @@
                 </li>
               </ul>
             </div>
-    
+
             <!-- <div class="col-sm-12 col-md-6">
     
               <a href="https://apps.apple.com/bo/app/calistenia-bolivia/id6443573666?l=en-GB"> <img
@@ -905,18 +860,18 @@
     
             </div> -->
           </div>
-    
-    
+
+
         </div>
       </div>
-    
+
       <hr>
 
       <div class="row text-center text-md-left mt-3 pb-3">
 
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 border" style="border-color: var(--border) !important; ">
           <a class="navbar-brand smooth-scroll" href="#home" sticky='top'>
-            <img src="img/svg/calistenia.color.svg"   alt="Logo" loading="lazy" class="v-mdb-smooth"
+            <img src="img/svg/calistenia.color.svg" alt="Logo" loading="lazy" class="v-mdb-smooth"
               style="max-width: 290px; width: 100%;" />
           </a>
         </div>
