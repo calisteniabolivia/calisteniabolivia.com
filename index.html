@@ -37,7 +37,10 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="assect/fonts/Gotham-Bold.woff2">
+  <link rel="stylesheet" href="assect/fonts/Gotham-Light.woff2">
+  <link rel="stylesheet" href="assect/fonts/gotham-medium.woff">
+  <link rel="stylesheet" href="assect/fonts/GothamCondensed-Bold.woff2?family=Roboto">
   <style>
     :root {
       --primary: #D60000;
@@ -90,6 +93,80 @@
 
       .navbar {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
+      }
+    }
+
+    /* @media (min-width: 1400px) and (max-width: 3000px) {
+      #destination {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      #destination h4 {
+        font-size: 67.2px;
+        margin-bottom: 16px;
+        font-family: "Gotham Condensed";
+        font-weight: 700;
+        line-height: 1;
+        font-family: "Gotham Condensed", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+        color: "#211551";
+      }
+
+      #destination p {}
+    } */
+    @media (min-width: 320px) {
+
+      /* movil */
+      #destination h4 {
+        font-size: 38px;
+        margin-bottom: 16px;
+        font-weight: 700;
+        line-height: 1;
+        font-family: "Gotham Condensed", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+        color: "#211551";
+      }
+
+      #destination p {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 450px) {
+
+      /* table */
+      #destination h4 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 1;
+        font-family: "Gotham Condensed", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+        color: "#211551";
+      }
+
+      #destination p {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      /* lapto */
+      #destination {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      #destination h4 {
+        font-size: 67.2px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 1;
+        font-family: "Gotham Condensed", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+        color: "#211551";
+      }
+
+      #destination p {
+        font-size: 14px;
       }
     }
 
@@ -216,9 +293,9 @@
 
   <main>
 
-    <div class="container">
+    <div>
 
-      <section id="about" class="section my-5 pb-4 border">
+      <section id="about" class=" container  section my-5 pb-4 border">
         <h1 class="section-heading text-center mb-5 my-5 mb-4 font-weight-bold wow fadeIn">Acerca de Nosotros</h1>
         <div class="row mb-5 wow fadeIn" data-wow-delay="0.2s">
           <div class="col-lg-4 mb-2">
@@ -260,23 +337,29 @@
         </div>
       </section>
 
-      <section id="destination" class="mt-4 text-center my-5 pb-4 border row">
+      <section id="destination" class=" container-fluid mt-4 text-center my-5 pb-4  border row">
 
-        <div class="col-sm-4">
-          <h4 class="text-center my-5 font-weight-bold wow fadeIn" data-wow-delay="0.2s">
-            <strong>Qué es Calistenia Bolivia?</strong>
+        <div class='col-sm-4'>
+          <img src="https://f45training.com/wp-content/uploads/2023/07/img-1.png" width='100%' alt='imglt1'>
+        </div>
+
+        <div class="col-sm-4  ">
+
+          <h4 class="text-center font-weight-bold wow fadeIn" data-wow-delay="0.2s">
+            <strong>Por qué CALISTENIA COMPANY</strong>
           </h4>
-          <p class="text-center w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Calistenia Bolivia S.R.L. ofrece entrenamiento funcional de alta calidad para desarrollar fuerza, resistencia y flexibilidad. Nuestros coaches calificados supervisan cada ejercicio para garantizar seguridad y eficacia. Enfoque en calidad y atención personalizada asegura resultados óptimos para cada miembro de nuestra comunidad de entrenamiento.</p>
-          <!-- <p class="text-center w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Calistenia Bolivia S.R.L. ofrece un método de entrenamiento funcional de alta calidad, diseñado para desarrollar fuerza, resistencia, flexibilidad, coordinación y mejorar el rendimiento físico. Nuestros coaches calificados están presentes en cada etapa del entrenamiento para supervisar y guiar a nuestros clientes, asegurando que cada ejercicio se realice de manera segura y efectiva. Nuestro enfoque en la calidad y la atención personalizada nos permite garantizar resultados óptimos para cada usuario que se una a nuestra comunidad de entrenamiento.</p> -->
-          <!-- <h3 class="text-center w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Calistenia Bolivia S.R.L. te
-          brinda uno de los mejores métodos de entrenamiento funcional ayudando a desarrollar fuerza que se traduzca en
-          alto rendimiento contando con coaching calificados para supervisar y guiar el proceso en todo el
-          entrenamiento.</h3> -->
+
+          <p class="text-center   mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Calistenia Bolivia S.R.L. ofrece un método de entrenamiento funcional de alta calidad, diseñado para desarrollar fuerza, resistencia, flexibilidad, coordinación y mejorar el rendimiento físico. Nuestros coaches calificados están presentes en cada etapa del entrenamiento para supervisar y guiar a nuestros clientes, asegurando que cada ejercicio se realice de manera segura y efectiva. Nuestro enfoque en la calidad y la atención personalizada nos permite garantizar resultados óptimos para cada usuario que se una a nuestra comunidad de entrenamiento.</p>
+
           <a href="#about" class="btn btn-outline wow fadeIn text-center center" style="background-color: var(--primary); color: white; " data-wow-delay="0.4s">Comienza ahora</a>
         </div>
 
+        <div class='col-sm-4 box'>
+          <img src="https://f45training.com/wp-content/uploads/2023/07/img-2-4.png" width='100%' alt='imglt2'>
+        </div>
+
       </section>
-      <section id="motivacion" class="section my-5 pb-4 border">
+      <section id="motivacion" class="container section my-5 pb-4 border">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s" style="color: var(--primary);">motivación</h2>
         <p>La motivación es el impulso que nos mueve a actuar y perseguir nuestras metas. Es la fuerza que nos impulsa a
           superar obstáculos y a alcanzar el éxito.</p>
@@ -305,7 +388,7 @@
         <!-- <p>La motivación es el impulso que nos mueve a actuar y perseguir nuestras metas. Es la fuerza que nos impulsa a superar obstáculos y a alcanzar el éxito.</p> -->
       </section>
 
-      <section id="nuestras_clases" class="section my-5 pb-4 border">
+      <section id="nuestras_clases" class="container section my-5 pb-4 border">
         <h2 class="text-center text-uppercase font-weight-bold mt-4 mb-3 pt-5 pb-3 wow fadeIn" data-wow-delay="0.2s" style="color: var(--primary);">nuestras clases</h2>
 
         <p>Ofrecemos clases de calistenia y boxeo diseñadas para ayudarte a alcanzar tus objetivos fitness y de
